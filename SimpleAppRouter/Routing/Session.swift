@@ -12,6 +12,11 @@ typealias Credentials = (username: String, password: String)
 
 struct Session {
     static var isAuthorized: Bool {
-        return UserDefaults.standard.bool(forKey: "isAuthorized")
+        get {
+            return UserDefaults.standard.bool(forKey: "isAuthorized")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "isAuthorized")
+        }
     }
 }

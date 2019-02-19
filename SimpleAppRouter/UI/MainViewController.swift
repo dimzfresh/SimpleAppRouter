@@ -15,12 +15,17 @@ class MainViewController: UIViewController {
 
         setup()
     }
-
 }
 
 private extension MainViewController {
     func setup() {
         addCustomLeftBarButton()
+        
+        setSessionStatus()
+    }
+    
+    func setSessionStatus() {
+        Session.isAuthorized = true
     }
     
     func addCustomLeftBarButton() {
