@@ -25,15 +25,15 @@ private extension SecondViewController {
     }
     
     func addCustomLeftBarButton() {
-        addNavigationButton(title: "Назад", image: nil, tintColor: UIColor.blue.withAlphaComponent(0.6), isLeft: true, selector: #selector(customLeftBarButtonTapped))
+        addNavigationButton(title: "Back", selector: #selector(customLeftBarButtonTapped))
     }
     
     @objc func customLeftBarButtonTapped() {
-        Router.instance.dismiss()
+        Router.instance.pop()
     }
     
     func addCustomRightBarButton() {
-        addNavigationButton(title: "Главный", image: nil, tintColor: UIColor.blue.withAlphaComponent(0.6), isLeft: false, selector: #selector(customRightBarButtonTapped))
+        addNavigationButton(title: "Main", isLeft: false, selector: #selector(customRightBarButtonTapped))
     }
     
     @objc func customRightBarButtonTapped() {

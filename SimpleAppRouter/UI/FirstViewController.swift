@@ -23,7 +23,7 @@ private extension FirstViewController {
     }
     
     func addCustomRightBarButton() {
-        addNavigationButton(title: "Вперед", image: nil, tintColor: UIColor.blue.withAlphaComponent(0.6), isLeft: false, selector: #selector(customRightBarButtonTapped))
+        addNavigationButton(title: "Forward", isLeft: false, selector: #selector(customRightBarButtonTapped))
     }
     
     @objc func customRightBarButtonTapped() {

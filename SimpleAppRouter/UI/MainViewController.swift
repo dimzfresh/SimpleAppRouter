@@ -20,7 +20,8 @@ class MainViewController: UIViewController {
 private extension MainViewController {
     func setup() {
         addCustomLeftBarButton()
-        
+        addCustomRightBarButton()
+
         setSessionStatus()
     }
     
@@ -29,10 +30,18 @@ private extension MainViewController {
     }
     
     func addCustomLeftBarButton() {
-        addNavigationButton(title: "Выйти", image: nil, tintColor: UIColor.blue.withAlphaComponent(0.6), isLeft: true, selector: #selector(customLeftBarButtonTapped))
+        addNavigationButton(title: "Exit", selector: #selector(customLeftBarButtonTapped))
     }
     
     @objc func customLeftBarButtonTapped() {
-        Router.instance.switchTo(.start)
+        showExitAlert(title: "Want to logout?", actionTitles: ["confirm", "cancel"])
+    }
+    
+    func addCustomRightBarButton() {
+        addNavigationButton(title: "Detail", isLeft: false, selector: #selector(customRightBarButtonTapped))
+    }
+    
+    @objc func customRightBarButtonTapped() {
+        Router.instance.loadDetailScene()
     }
 }

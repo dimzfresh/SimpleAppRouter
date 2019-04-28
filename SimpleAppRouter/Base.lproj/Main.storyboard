@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qlo-eP-SOQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qlo-eP-SOQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm first screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k47-ej-9D0">
-                                <rect key="frame" x="120" y="321.5" width="135" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" red="0.56020368949975285" green="0.86548794089454617" blue="0.93039774894714355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="111.5" y="320.5" width="152.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.56271150520000002" green="0.65959348039999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -47,9 +47,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm second screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOq-9L-F7G">
-                                <rect key="frame" x="105" y="289.5" width="165.5" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" red="0.56020368949999999" green="0.86548794090000003" blue="0.93039774890000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="94.5" y="288.5" width="186.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.56271150523991542" green="0.65959348040883636" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -75,16 +75,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm main screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsT-wK-ydp">
-                                <rect key="frame" x="116" y="321.5" width="143" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <rect key="frame" x="107" y="320" width="161" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <color key="textColor" red="0.99215686270000003" green="0.51764705879999995" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.95486402736451503" blue="0.93404399109488123" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="tsT-wK-ydp" firstAttribute="centerY" secondItem="U69-7w-hZ2" secondAttribute="centerY" id="HDm-Xs-KBw"/>
-                            <constraint firstItem="tsT-wK-ydp" firstAttribute="centerX" secondItem="U69-7w-hZ2" secondAttribute="centerX" id="QHR-5k-DEQ"/>
+                            <constraint firstItem="tsT-wK-ydp" firstAttribute="centerY" secondItem="U69-7w-hZ2" secondAttribute="centerY" id="P7t-LW-O0g"/>
+                            <constraint firstItem="tsT-wK-ydp" firstAttribute="centerX" secondItem="U69-7w-hZ2" secondAttribute="centerX" id="QMa-r0-VWV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Trr-Xm-B7H"/>
                     </view>
@@ -93,6 +93,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Leq-4o-SlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3410" y="-672"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="JKH-Zk-fjy">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" title="Detail" id="1v4-bJ-qc0" customClass="DetailViewController" customModule="SimpleAppRouter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qYO-wI-Yt2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm detail screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqc-QY-jYt">
+                                <rect key="frame" x="103" y="288" width="169" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80772625040000001" green="0.86743916330000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hqc-QY-jYt" firstAttribute="centerY" secondItem="qYO-wI-Yt2" secondAttribute="centerY" id="YB6-2P-4HY"/>
+                            <constraint firstItem="hqc-QY-jYt" firstAttribute="centerX" secondItem="qYO-wI-Yt2" secondAttribute="centerX" id="ZKa-ES-X48"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uIJ-KR-fyR"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ic1-BM-2wU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4241" y="-672"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Opn-KG-dY8">

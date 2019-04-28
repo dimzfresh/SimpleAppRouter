@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         router.switchTo(.splash)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.8) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.7) {
             self.router.start()
         }
 
@@ -46,7 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

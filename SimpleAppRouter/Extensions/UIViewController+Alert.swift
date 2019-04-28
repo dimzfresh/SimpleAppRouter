@@ -21,32 +21,40 @@ extension UIViewController {
     }
 }
 
+public protocol Presentable {
+    func toPresentable() -> UIViewController
+}
+
+extension UIViewController: Presentable {
+    public func toPresentable() -> UIViewController {
+        return self
+    }
+}
+
+
 extension UIViewController {
     
-    var isModal: Bool {
-        return presentingViewController != nil
-    }
-    
-    func showAlert(title: String?, message: String, dismiss: Bool = false) {
-   
+    func showExitAlert(title: String = "", actionTitles: [String] = [], message: String = "") {
+        guard actionTitles.count == 2 else { return }
+        
+        let firstTitle = actionTitles.first ?? ""
+        let lastTitle = actionTitles.last ?? ""
+        
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-    
-        alert.addAction(UIAlertAction(title: "Закрыть", style: .default, handler: { (action: UIAlertAction!) in
-            
-            if dismiss {
-                if self.isModal {
-                    self.dismiss(animated: true)
-                } else {
-                    self.navigationController?.popViewController(animated: true)
-                }
-            }
-            
+        
+        alert.addAction(UIAlertAction(title: firstTitle, style: .default, handler: { (action: UIAlertAction!) in
+            Session.isAuthorized = false
+            Router.instance.switchTo(.start)
         }))
         
-        present(alert, animated: true, completion: nil)
+        if !lastTitle.isEmpty {
+            alert.addAction(UIAlertAction(title: lastTitle, style: .cancel))
+        }
+        
+        present(alert, animated: true)
     }
     
-    func addNavigationButton(title: String?, image: UIImage?, tintColor: UIColor = UIColor(red: 0.61, green: 0.61, blue: 0.61, alpha: 1), isLeft: Bool, selector: Selector, font: UIFont? = nil) {
+    func addNavigationButton(title: String?, image: UIImage? = nil, tintColor: UIColor =  UIColor.black.withAlphaComponent(0.6), isLeft: Bool = true, selector: Selector, font: UIFont? = nil) {
         
         let button = UIButton(type: .system)
         let originalImage = image

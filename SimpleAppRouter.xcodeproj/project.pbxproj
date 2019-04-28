@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3A63EF2275C0FA004A92E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A63EE2275C0FA004A92E4 /* DetailViewController.swift */; };
 		5A573029221C2AB9009DE74E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A573028221C2AB9009DE74E /* AppDelegate.swift */; };
 		5A57302B221C2AB9009DE74E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57302A221C2AB9009DE74E /* FirstViewController.swift */; };
 		5A57302E221C2AB9009DE74E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A57302C221C2AB9009DE74E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A3A63EE2275C0FA004A92E4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5A573025221C2AB9009DE74E /* SimpleAppRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAppRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A573028221C2AB9009DE74E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A57302A221C2AB9009DE74E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				5A57302A221C2AB9009DE74E /* FirstViewController.swift */,
 				5A57303C221C2E53009DE74E /* SecondViewController.swift */,
 				5A573048221C3935009DE74E /* MainViewController.swift */,
+				5A3A63EE2275C0FA004A92E4 /* DetailViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3A63EF2275C0FA004A92E4 /* DetailViewController.swift in Sources */,
 				5A573047221C3816009DE74E /* Session.swift in Sources */,
 				5A57303D221C2E53009DE74E /* SecondViewController.swift in Sources */,
 				5A57303F221C2F80009DE74E /* Storyboards.swift in Sources */,
