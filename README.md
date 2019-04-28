@@ -1,2 +1,2 @@
 # SimpleAppRouter
-- simple app flow + router
+- easy app flow + router
